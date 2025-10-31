@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
+.headerImage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 5%;
+  height: 5%;
+}
+
+.topLeftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background: url(/assets/tardisFondo.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #003b6f;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topLeftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.topLeftContainer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.topLeftContainer a:hover {
+  text-decoration: underline;
+}
+
+.mainContainer {
+  margin-top: 100px;
+  width: 60%;
+  flex: 1;
+  text-align: center;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.imageGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imageItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.imageItem img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.imageItem p {
+  margin-top: 10px;
+}
+
+.headerImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.topLeftContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.topLeftContainer a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  background: #0a0a23;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.topLeftContainer a:hover {
+  background: #1f1f5c;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.imageItem {
+  text-align: center;
+}
+
+.imageItem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+.imageItem a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #4da3ff;
+  transition: color 0.3s;
+}
+
+.imageItem a:hover {
+  color: #1f1f5c;
+}
+
+@media (max-width: 768px) {
+  .topLeftContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContainer p {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+  .topLeftContainer a {
+    width: 100%;
+    text-align: center;
+  }
+  .mainContainer {
+    padding: 10px;
+  }
+  .mainContainer p {
+    font-size: 0.9rem;
+  }
+}
+body.personajes {
+  background-color: #0a0a0a;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.personajes header img {
+  max-width: 250px;
+}
+
+.personajes nav a {
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.personajes nav a:hover {
+  background-color: #00509e;
+  color: #fff !important;
+}
+
+.personajes .card {
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personajes .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.personajes .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 580px;
+}
+
+.personajes .card-title {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+.personajes .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
+
+@media (max-width: 800px) {
+  .personajes header img {
+    max-width: auto;
+  }
+  .personajes .card img {
+    height: auto;
+  }
+}
+body.enemigos {
+  background-color: #0a0a0a;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enemigos header img {
+  max-width: 250px;
+}
+
+.enemigos nav a {
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.enemigos nav a:hover {
+  background-color: #00509e;
+  color: #fff !important;
+}
+
+.enemigos .card {
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enemigos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.enemigos .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+
+.enemigos .card-title {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+.enemigos .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
+
+@media (max-width: 576px) {
+  .enemigos header img {
+    max-width: 300px;
+  }
+  .enemigos .card img {
+    height: 640px;
+  }
+}
+
+
+body.historia {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.historia header img {
+  max-width: 250px;
+}
+
+.historia nav a {
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.historia nav a:hover {
+  background-color: #00509e;
+  color: #fff !important;
+}
+
+.historia .card {
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historia .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.historia .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+
+.historia .card-title {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+.historia .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .historia header img {
+    max-width: 180px;
+  }
+  .historia .card img {
+    height: 200px;
+  }
+}
+
+body.algunosPlanetas {
+  background-color: #0a0a0a;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.algunosPlanetas header img {
+  max-width: 250px;
+}
+
+.algunosPlanetas nav a {
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.algunosPlanetas nav a:hover {
+  background-color: #00509e;
+  color: #fff !important;
+}
+
+.algunosPlanetas .card {
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.algunosPlanetas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.algunosPlanetas .card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+
+.algunosPlanetas .card-title {
+  color: #4da3ff;
+  margin-bottom: 10px;
+}
+
+.algunosPlanetas .card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
+
+@media (max-width: 576px) {
+  .algunosPlanetas header img {
+    max-width: 180px;
+  }
+  .algunosPlanetas .card img {
+    height: 200px;
+  }
+}
+
+
+body.index {
+  background-color: #0a0a0a;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainContainer.index {
+  background-color: #0a0a0a;
+  color: #e6e6e6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index header img {
+  max-width: 250px;
+}
+
+.index nav a {
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.index nav a:hover {
+  background-color: #00509e;
+  color: #fff !important;
+}
+
+.index text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
+
+@media (max-width: 576px) {
+  .index header img {
+    max-width: 180px;
+  }
+
+}
